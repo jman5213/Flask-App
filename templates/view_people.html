@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+  <header>
+    <title>DB readings</title>
+  </header>
+
+  <body>
+    {% if id %}
+      <table border="2px">
+    <caption>User Data for User {{id}}</caption>
+    <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+    </tr>
+    <tr>
+        <td>{{id}}</td>
+        <td>{{fname}}</td>
+        <td>{{lname}}</td>
+    </tr>
+</table>
+    {% endif %}
+  </body>
+</html>
